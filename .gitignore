@@ -1,0 +1,68 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+
+# Visual Studio Code
+.vscode/
+
+# Rider / JetBrains
+.idea/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+*.log
+
+# ASP.NET Core / dotnet
+appsettings.*.local.json
+secrets.json
+*.pfx
+
+# Test results
+TestResults/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+
+# Publish output
+**/publish/
+**/PublishProfiles/
+
+# Coverage
+coverage/
+coverage.*.xml
+*.opencover.xml
+*.coverage
+*.coveragexml
+
+# Database files (local dev)
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Tools
+.dotnet/
+
+# Cursor
+.cursor/
+**/.cursor/
+
+
