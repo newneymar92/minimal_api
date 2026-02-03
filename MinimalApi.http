@@ -1,6 +1,27 @@
-@MinimalApi_HostAddress = http://localhost:5032
+@MinimalApi_HostAddress = https://localhost:5032
+@Token = your_jwt_token_here
 
-GET {{MinimalApi_HostAddress}}/weatherforecast/
+### Register User
+POST {{MinimalApi_HostAddress}}/api/Auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "password123"
+}
+
+### Login
+POST {{MinimalApi_HostAddress}}/api/Auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "password123"
+}
+
+### Get Weather Forecast (Requires Authorization)
+GET {{MinimalApi_HostAddress}}/api/WeatherForecast
+Authorization: Bearer {{Token}}
 Accept: application/json
 
 ###
